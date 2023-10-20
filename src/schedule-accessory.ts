@@ -72,7 +72,7 @@ class ScheduleAccessory implements AccessoryPlugin {
       .on(
         CharacteristicEventTypes.GET,
         (callback: CharacteristicGetCallback) => {
-          this.log.debug(`Schedule: [${this.scheduleOn ? 'ON' : 'OFF'}]`);
+          }]`);
 
           callback(undefined, this.scheduleOn);
         },
@@ -83,7 +83,7 @@ class ScheduleAccessory implements AccessoryPlugin {
           this.scheduleOn = value as boolean;
 
           this.log.info(
-            `Schedule was set to: [${this.scheduleOn ? 'ON' : 'OFF'}]`,
+            ,
           );
 
           if (value) {
